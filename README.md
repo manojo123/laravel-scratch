@@ -1,10 +1,10 @@
 ## LARAVEL FROM SCRATCH BY JORGE A. M. MOURA
 
--LAMP
+-LAMP (https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04)
 
 -Composer
 
--Laravel
+-Laravel (https://laravel.com/docs/6.x#installation)
 
 -Configurar Credenciales Mysql
 
@@ -49,3 +49,19 @@
 -CRUD Contacto
 
 -Factory $faker (https://github.com/fzaninotto/Faker)
+
+-Refactorar Form Create Edit
+
+-Relationships (https://laravel.com/docs/6.x/eloquent-relationships)
+
+-Pivot Table with Timestamps
+
+-Attach Detach
+
+-Auth Middleware (https://laravel.com/docs/master/middleware)
+
+-Alter table Migration Contact user_id
+
+-Auth Helper
+
+-Policies (https://laravel.com/docs/5.2/authorization#policies)

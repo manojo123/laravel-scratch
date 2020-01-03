@@ -7,6 +7,16 @@ use Illuminate\Http\Request;
 
 class ContactsController extends Controller
 {
+
+	public function __construct()
+	{
+		$this->middleware('auth', ['except' => [
+			'create',
+			'store',
+			'show'
+		]]);
+	}
+
 	/**
 	 * Display a listing of the resource.
 	 *
