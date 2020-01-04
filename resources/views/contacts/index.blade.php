@@ -13,6 +13,9 @@
 				<p class="alert alert-warning">No Hay mensajes para mostrar. Haz click <a href="/contacts/create">aquí</a> para enviar su contacto</p>
 			</div>
 		@endforelse
+		<div class="col-12">
+			{!! $contacts->render() !!}
+		</div>
 	</div>
 
 @endsection

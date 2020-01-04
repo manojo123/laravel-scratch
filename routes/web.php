@@ -19,7 +19,7 @@ Route::resource('/resources', 'ResourcesController');
 // Route::post('/resources', 'ResourcesController@store');
 
 
-// Route::group(['middleware' => 'auth'], function(){
+Route::group(['middleware' => 'auth'], function(){
 	// Route::get('/contacts', 'ContactsController@index');
 	// Route::get('/contacts/create', 'ContactsController@create');
 	// Route::post('/contacts', 'ContactsController@store');
@@ -28,7 +28,7 @@ Route::resource('/resources', 'ResourcesController');
 	// Route::put('/contacts/{contact}', 'ContactsController@update');
 	// Route::delete('/contacts/{contact}', 'ContactsController@destroy');
 	Route::resource('/contacts', 'ContactsController');
-// });
+});
 
 Auth::routes();
 

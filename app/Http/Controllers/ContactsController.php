@@ -4,18 +4,19 @@ namespace App\Http\Controllers;
 
 use App\Contact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 
 class ContactsController extends Controller
 {
 
-	public function __construct()
-	{
-		$this->middleware('auth', ['except' => [
-			'create',
-			'store',
-			'show'
-		]]);
-	}
+	// public function __construct()
+	// {
+	// 	$this->middleware('auth', ['except' => [
+	// 		'create',
+	// 		'store',
+	// 		'show'
+	// 	]]);
+	// }
 
 	/**
 	 * Display a listing of the resource.
@@ -24,7 +25,10 @@ class ContactsController extends Controller
 	 */
 	public function index()
 	{
-		$contacts = Contact::all();
+		$contacts = Contact::where([
+			'user_id' => auth()->id()
+		])->paginate(1);
+
 		return view('contacts.index', compact('contacts'));
 	}
 
@@ -54,6 +58,7 @@ class ContactsController extends Controller
 		]);
 
 		$contact = (new Contact)->create([
+			'user_id' => auth()->id(),
 			'name' => $request->name,
 			'email' => $request->email,
 			'subject' => $request->subject,
@@ -71,6 +76,10 @@ class ContactsController extends Controller
 	 */
 	public function show(Contact $contact)
 	{
+		if (Gate::denies('view', $contact)) {
+            return redirect('/contacts')->withErrors("Dont hack me plz");
+        }
+
 		return view('contacts.show', compact('contact'));
 	}
 

@@ -65,3 +65,7 @@
 -Auth Helper
 
 -Policies (https://laravel.com/docs/5.2/authorization#policies)
+
+-PHPUNIT (https://laravel.com/docs/6.x/testing#introduction)
+
+-Pagination (https://laravel.com/docs/5.1/pagination#paginating-eloquent-results)
