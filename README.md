@@ -2,7 +2,7 @@
 
 -LAMP (https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04)
 
--Composer
+-Composer (https://getcomposer.org/doc/00-intro.md#installation-linux-unix-macos)
 
 -Laravel (https://laravel.com/docs/6.x#installation)
 
@@ -20,21 +20,21 @@
 
 -Helpers (https://laravel.com/docs/6.x/helpers)
 
--Tinker
+-Tinker (https://laravel.com/docs/6.x/artisan#tinker)
 
 -set EDITOR="vim"
 
 -Laravel UI (https://laravel.com/docs/6.x/frontend)
 
--Artisan
+-Artisan (https://laravel.com/docs/6.x/artisan)
 
--Views
+-Views (https://laravel.com/docs/6.x/blade)
 
 -Refactorar app.blade.php
 
--Routes
+-Routes (https://laravel.com/docs/6.x/controllers#introduction)
 
--Controller
+-Controller (https://laravel.com/docs/6.x/controllers#introduction)
 
 -ResourceController (https://laravel.com/docs/6.x/controllers#resource-controllers)
 
@@ -44,7 +44,9 @@
 
 -Display validation Errors (https://laravel.com/docs/6.x/validation#quick-displaying-the-validation-errors)
 
--Model + Migrations
+-Model (https://laravel.com/docs/6.x/eloquent#defining-models)
+
+-Migrations (https://laravel.com/docs/6.x/migrations)
 
 -CRUD Contacto
 
@@ -52,7 +54,7 @@
 
 -Refactorar Form Create Edit
 
--Relationships (https://laravel.com/docs/6.x/eloquent-relationships)
+-Eloquent Relationships (https://laravel.com/docs/6.x/eloquent-relationships)
 
 -Pivot Table with Timestamps
 
@@ -64,8 +66,16 @@
 
 -Auth Helper
 
--Policies (https://laravel.com/docs/5.2/authorization#policies)
+-Policies (https://laravel.com/docs/6.x/authorization#policies)
 
 -PHPUNIT (https://laravel.com/docs/6.x/testing#introduction)
 
--Pagination (https://laravel.com/docs/5.1/pagination#paginating-eloquent-results)
+-Pagination (https://laravel.com/docs/6.x/pagination#paginating-eloquent-results)
+
+-Passport (https://laravel.com/docs/6.x/passport#installation)
+
+-Testing Passport (https://laravel.com/docs/6.x/passport#testing)
+
+-Return User Json response to Passport Route
+
+-Block CSRF in Passport (VerifyCsrfToken)

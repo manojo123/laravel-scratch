@@ -30,6 +30,16 @@ Route::group(['middleware' => 'auth'], function(){
 	Route::resource('/contacts', 'ContactsController');
 });
 
+Route::group(['middleware' => 'auth:api'], function(){
+	Route::get('/api/test', function(){
+		return auth()->user()->toArray();
+	});
+
+	Route::post('/api/test', function(){
+		return request()->toArray();
+	});
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

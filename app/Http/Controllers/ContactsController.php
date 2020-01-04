@@ -27,7 +27,7 @@ class ContactsController extends Controller
 	{
 		$contacts = Contact::where([
 			'user_id' => auth()->id()
-		])->paginate(1);
+		])->paginate(2);
 
 		return view('contacts.index', compact('contacts'));
 	}
