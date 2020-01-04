@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'TestController@index');
+
 Route::get('/test/{test}/{test2}', 'TestController@get_variable');
 
 Route::resource('/resources', 'ResourcesController');
