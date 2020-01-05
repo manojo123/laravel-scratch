@@ -68,6 +68,8 @@
 
 -Policies (https://laravel.com/docs/6.x/authorization#policies)
 
+-SuperUser Gate AuthServiceProvider
+
 -PHPUNIT (https://laravel.com/docs/6.x/testing#introduction)
 
 -Pagination (https://laravel.com/docs/6.x/pagination#paginating-eloquent-results)
