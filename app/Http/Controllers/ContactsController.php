@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Contact;
+use App\Mail\ContactCreatedMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\Mail;
 
 class ContactsController extends Controller
 {
@@ -64,6 +66,9 @@ class ContactsController extends Controller
 			'subject' => $request->subject,
 			'message' => $request->message,
 		]);
+
+		Mail::to($contact->email)
+			->send((new ContactCreatedMail($contact)));
 
 		return redirect('contacts/'.$contact->id);
 	}

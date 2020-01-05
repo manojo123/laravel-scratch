@@ -81,3 +81,13 @@
 -Return User Json response to Passport Route
 
 -Block CSRF in Passport (VerifyCsrfToken)
+
+-Mailing (https://laravel.com/docs/6.x/mail)
+
+-Mail Markdown Template (https://laravel.com/docs/6.x/mail#writing-markdown-messages)
+
+-Mail Markdown Syntax (https://www.markdownguide.org/basic-syntax/)
+
+-Artisan Commands(https://laravel.com/docs/6.x/artisan#generating-commands)
+
+-Task Scheduling (https://laravel.com/docs/6.x/scheduling)
